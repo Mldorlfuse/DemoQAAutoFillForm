@@ -1,6 +1,5 @@
 import allure
-from selene import have, be
-from selene.support.shared import browser
+from selene import browser, have
 import os
 from selenium.webdriver.support.ui import Select
 
