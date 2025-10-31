@@ -1,5 +1,6 @@
 import allure
-from selene import browser, have, be
+from selene import have, be
+from selene.support.shared import browser
 from data.test_data import RegistrationData
 
 from core.app_manager import ApplicationManager
