@@ -14,7 +14,11 @@ def setup_browser():
     chrome_options.add_argument("--disable-dev-shm-usage")
 
     # Установка драйвера через WebDriver Manager
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
+
+    driver = webdriver.Chrome(
+        service=ChromeService(ChromeDriverManager(version="114.0.5735.90").install()),
+        options=chrome_options
+    )
 
     # Настройка Selene
     browser.config.driver = driver
